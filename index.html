@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Website Deployment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #0779e4 3px solid;
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        ul {
+            padding: 0;
+            list-style: none;
+        }
+        nav ul {
+            float: right;
+            margin-top: 10px;
+        }
+        nav ul li {
+            display: inline;
+            margin-left: 5px;
+        }
+        .showcase {
+            background: url('https://via.placeholder.com/1200x400') no-repeat 0 -400px;
+            min-height: 400px;
+            text-align: center;
+            color: #fff;
+        }
+        .showcase h1 {
+            margin-top: 100px;
+            font-size: 55px;
+            margin-bottom: 10px;
+        }
+        .showcase p {
+            font-size: 20px;
+        }
+        section {
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1>Static Website Deployment</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#task">Task</a></li>
+                    <li><a href="#requirements">Requirements</a></li>
+                    <li><a href="#acceptance-criteria">Acceptance Criteria</a></li>
+                    <li><a href="#submission-mode">Submission Mode</a></li>
+                    <li><a href="#hng-internship">HNG Internship</a></li>
+                    <li><a href="#how-to-deploy-on-gcp">How to Deploy on GCP</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="showcase">
+        <div class="container">
+            <h1>Deploy Your Static Website</h1>
+            <p>Learn how to deploy a static website on Google Cloud Platform using NGINX.</p>
+        </div>
+    </section>
+
+    <section id="task" class="container">
+        <h2>Task</h2>
+        <p>In this stage, you'll step into the shoes of a DevOps engineer and deploy a static website onto a cloud platform.</p>
+        <h3>Steps:</h3>
+        <ul>
+            <li><strong>Cloud Platform:</strong> Choose a cloud platform of your preference (AWS EC2, Azure, GCP, etc) to deploy your website.</li>
+            <li><strong>Web Server:</strong> Select a web server software like NGINX or Apache to serve your static website content.</li>
+            <li><strong>Website Preparation:</strong> Ensure your static website files (HTML, CSS, Javascript) are ready for deployment.</li>
+            <li><strong>Server Configuration:</strong> Configure the chosen web server (NGINX or Apache) on your cloud instance to serve your website content.</li>
+        </ul>
+    </section>
+
+    <section id="requirements" class="container">
+        <h2>Requirements</h2>
+        <ul>
+            <li><strong>Cloud Platform:</strong> AWS EC2, Azure, or GCP (your choice)</li>
+            <li><strong>Web Server:</strong> NGINX or Apache</li>
+            <li><strong>Static Website:</strong> A ready-to-deploy static website project (HTML, CSS, Javascript) which includes your Name, username, and your email.</li>
+        </ul>
+    </section>
+
+    <section id="acceptance-criteria" class="container">
+        <h2>Acceptance Criteria</h2>
+        <ul>
+            <li><strong>Successful Deployment:</strong> Your static website is accessible through a public IP address or a domain name after deployment. The IP address shouldn’t include ports asides port 80.</li>
+            <li><strong>Web Server Configuration:</strong> The chosen web server (NGINX or Apache) is configured correctly to serve your website content.</li>
+        </ul>
+    </section>
+
+    <section id="submission-mode" class="container">
+        <h2>Submission Mode</h2>
+        <ul>
+            <li>Double-checked all requirements and acceptance criteria.</li>
+            <li>Provided a link to your deployed website in the submission form.</li>
+            <li>Thoroughly reviewed your work to ensure accuracy, functionality, and adherence to the specified guidelines before you submit it.</li>
+        </ul>
+    </section>
+
+    <section id="hng-internship" class="container">
+        <h2>HNG Internship</h2>
+        <p>The HNG Internship is a very helpful and self-development internship to become a world-standard DevOps engineer. For more information, visit <a href="https://hng.tech">HNG Internship</a>.</p>
+    </section>
+
+    <section id="how-to-deploy-on-gcp" class="container">
+        <h2>How to Deploy on GCP</h2>
+        <ol>
+            <li>
+                <strong>Create a GCP Account and Project</strong>
+                <img src="https://via.placeholder.com/600x400" alt="Create GCP Project">
+            </li>
+            <li>
+                <strong>Enable Billing for Your Project</strong>
+                <img src="https://via.placeholder.com/600x400" alt="Enable Billing">
+            </li>
+            <li>
+                <strong>Create a VM Instance</strong>
+                <img src="https://via.placeholder.com/600x400" alt="Create VM Instance">
+            </li>
+            <li>
+                <strong>Connect to Your VM Instance</strong>
+                <img src="https://via.placeholder.com/600x400" alt="Connect to VM Instance">
+            </li>
+            <li>
+                <strong>Install NGINX on Your VM</strong>
+                <img src="https://via.placeholder.com/600x400" alt="Install NGINX">
+                <pre><code>sudo apt update
+sudo apt install nginx</code></pre>
+            </li>
+            <li>
+                <strong>Upload Your Website Files</strong>
+                <img src="https://via.placeholder.com/600x400" alt="Upload Files">
+                <pre><code>scp -i /path/to/your-ssh-key -r /path/to/your-website-files username@your-vm-external-ip:/home/username</code></pre>
+            </li>
+            <li>
+                <strong>Move Your Website Files to the NGINX Directory</strong>
+                <img src="https://via.placeholder.com/600x400" alt="Move Files">
+                <pre><code>sudo mv /home/username/your-website-files/* /var/www/html/
+sudo chown -R www-data:www-data /var/www/html/</code></pre>
+            </li>
+            <li>
+                <strong>Restart NGINX</strong>
+                <img src="https://via.placeholder.com/600x400" alt="Restart NGINX">
+                <pre><code>sudo systemctl restart nginx</code></pre>
+            </li>
+            <li>
+                <strong>Access Your Website</strong>
+                Open a web browser and navigate to your VM's external IP address. Your static website should be displayed.
+                <img src="https://via.placeholder.com/600x400" alt="Access Website">
+            </li>
+        </ol>
+    </section>
+
+    <footer>
+        <p>Static Website Deployment &copy; 2024</p>
+    </footer>
+</body>
+</html>
