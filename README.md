@@ -41,55 +41,55 @@ Submit your task through the designated submission form. Ensure you've:
 
 - Double-checked all requirements and acceptance criteria.
 - Provided a link to your deployed website in the submission form.
-- Thoroughly reviewed your work to ensure accuracy, functionality, and adherence to the specified guidelines before you submit it.
+- Thoroughly review your work to ensure accuracy, functionality, and adherence to the specified guidelines before you submit it.
 
 ## HNG Internship
 
-The HNG Internship is a very helpful and self-development internship to become a world-standard DevOps engineer. For more information, visit [HNG Internship](https://hng.tech).
+The HNG Internship is a beneficial and self-development internship to become a world-standard DevOps engineer. For more information, visit [HNG Internship](https://hng.tech).
 
 ## How to Deploy on GCP
 
 Follow these steps to deploy your static website on Google Cloud Platform (GCP) using NGINX:
 
 1. **Create a GCP Account and Project**
-    ![Create GCP Project](https://cloud.google.com/images/cloud-console.png)
+    ![Create GCP Project]
 2. **Enable Billing for Your Project**
-    ![Enable Billing](https://cloud.google.com/billing/images/setting_up_billing.png)
+    ![Enable Billing]
 3. **Create a VM Instance**
-    ![Create VM Instance](https://cloud.google.com/images/creating-vm-instance.png)
+    ![Create VM Instance]
 4. **Connect to Your VM Instance**
-    ![Connect to VM Instance](https://cloud.google.com/images/ssh-connection.png)
+    ![Connect to VM Instance]
 5. **Install NGINX on Your VM**
     ```bash
     sudo apt update
     sudo apt install nginx
     ```
-    ![Install NGINX](https://www.nginx.com/wp-content/uploads/2018/08/NGINX-logo-rgb-large.png)
+    ![Install NGINX]
 6. **Upload Your Website Files**
     ```bash
     scp -i /path/to/your-ssh-key -r /path/to/your-website-files username@your-vm-external-ip:/home/username
     ```
-    ![Upload Files](https://cloud.google.com/images/upload-files.png)
+    ![Upload Files]
 7. **Move Your Website Files to the NGINX Directory**
     ```bash
     sudo mv /home/username/your-website-files/* /var/www/html/
     sudo chown -R www-data:www-data /var/www/html/
     ```
-    ![Move Files](https://cloud.google.com/images/move-files.png)
+    ![Move Files]
 8. **Restart NGINX**
     ```bash
     sudo systemctl restart nginx
     ```
-    ![Restart NGINX](https://www.nginx.com/wp-content/uploads/2020/10/NGINX-Logo-2020-Graphics.jpg)
+    ![Restart NGINX]
 9. **Access Your Website**
     Open a web browser and navigate to your VM's external IP address. Your static website should be displayed.
-    ![Access Website](https://cloud.google.com/images/access-website.png)
+    ![Access Website]
 
 ## Contact Information
 
-- **Name:** Your Name
-- **Username:** yourusername
-- **Email:** youremail@example.com
+- **Name:** Ismail Muhammed
+- **Username:** ismailmuhammed2019@gmail.com
+- **Email:** ismailmuhammed2019@gmail.com
 
 ## License
 
