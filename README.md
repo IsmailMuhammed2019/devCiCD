@@ -88,7 +88,7 @@ Follow these steps to deploy your static website on Google Cloud Platform (GCP) 
 ## Contact Information
 
 - **Name:** Ismail Muhammed
-- **Username:** ismailmuhammed2019@gmail.com
+- **Username:** ismailmuhammed2019
 - **Email:** ismailmuhammed2019@gmail.com
 
 ## License
